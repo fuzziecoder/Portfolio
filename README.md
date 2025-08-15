@@ -31,7 +31,6 @@ This portfolio is designed to make a strong first impression, with smooth animat
 - **`FloatingDock`** – Interactive navigation dock
 - **`FlipWords`** – Animated rotating text
 
----
 
 ## 📂 Tech Stack
 | Category  | Tools |
@@ -43,3 +42,4 @@ This portfolio is designed to make a strong first impression, with smooth animat
 | UI        | Custom + reusable components |
 
 ---
+
