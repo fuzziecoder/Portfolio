@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {} from "next/font/google";
+import SplashCursor from "@/components/ui/splash-cursor";
 
 export const metadata: Metadata = {
   title:
     "Portfolio | Ramkumar (fuzziecoder)| Web developer & Data analist",
-      description:
-    "Crafting compelling narratives through design, merging creativity with functionality seamlessly."
+  description:
+    "Crafting compelling narratives through design, merging creativity with functionality seamlessly.",
+  icons: {
+    icon: [
+      { url: '/favicon-simple.svg', type: 'image/svg+xml' }
+    ],
+    shortcut: '/favicon-simple.svg',
+    apple: '/favicon-simple.svg',
+  },
 };
 
 const montserrat = Montserrat({
@@ -23,7 +31,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${montserrat.variable}`}>
-      <body className={montserrat.className}>{children}</body>
+      <head>
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.svg" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+      </head>
+      <body className={montserrat.className}>
+        <SplashCursor />
+        {children}
+      </body>
     </html>
   );
 }

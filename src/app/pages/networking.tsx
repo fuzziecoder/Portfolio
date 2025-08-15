@@ -39,58 +39,62 @@ export default Networking;
 const images = [
   {
     src: "/networking-1.png",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7306864289519128576"
+    href: "https://www.linkedin.com/posts/fuzziecoder_microsoftglobalaitour-seasonsofagents-technexus-activity-7329859927743614976-1CXv?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-2.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_keploy-gittogether-opensourcecommunity-activity-7169236453577646080-YoXh?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_internshipexperience-cosmic365-ai-activity-7354480494102671360-5QzH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-3.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_serverlessdays-bangalore-techcommunity-activity-7235735531211345920-RoQg?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_python-datascience-lifelonglearning-activity-7349937557742252032-0C_2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-4.png",
-    href: "https://www.linkedin.com/posts/technexuscommunity_microsoftai-azureopenai-aiinnovation-activity-7302707221094666241-9zWP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACKWXU0BijJEUI16M7ei08EhKNgho2RX3xM"
+    href: "https://www.linkedin.com/posts/fuzziecoder_powerbi-datavisualization-ai-activity-7327880574323359744-H4jU?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-5.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_thats-a-wrap-for-serverlessdays-bengaluru-activity-7235948907954892802-3tpT?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_python-dataanalysis-freecodecamp-activity-7350560646993698817-a5Cl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-6.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_githubconstellation-oss-developercommunity-activity-7206725289031196673-8D-l?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_crud-operations-in-mongodb-was-issued-by-activity-7355134587385139200-JmmJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-7.png",
-    href: "https://x.com/lassiecoder/status/1836049315778678872"
+    href: "https://www.linkedin.com/posts/fuzziecoder_socialmediamarketing-udemy-digitalmarketing-activity-7326032042696081408-kXhm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-8.png",
-    href: "https://x.com/lassiecoder/status/1829883911675183349"
+    href: "https://www.linkedin.com/posts/fuzziecoder_letsupgrade-studentambassador-edtech-activity-7361580170186510336-KEv2?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-9.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-gittogetherbengaluru-opensource-activity-7233815879728123904-XVV9?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_forage-certificate-activity-7331644365905256450-DM0X?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-10.png",
-    href: "https://x.com/adityaoberai1/status/1763221813625331791"
+    href: "https://www.linkedin.com/posts/fuzziecoder_excel-certification-oneroadmap-activity-7356380863019847685-2aPV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-11.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_elevatevirtualconference-girlgeekx-networking-activity-7204481662913544193-aFAM?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_opensource-opensourcecontributor-opensourcecommunity-activity-7361780963699273728-ylN8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-12.png",
-    href: "https://x.com/edjgeek/status/1830168978603282712"
+    href: "https://www.linkedin.com/posts/fuzziecoder_datascience-analytics-hplife-activity-7325350238729236481-xS1b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-13.png",
-    href: "https://x.com/lassiecoder/status/1823067516165308606"
+    href: "https://www.linkedin.com/posts/fuzziecoder_socialmediamarketing-udemy-digitalmarketing-activity-7326032042696081408-kXhm?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   },
   {
     src: "/networking-14.png",
-    href: "https://www.linkedin.com/posts/priyanka-s-b79401142_gittogether-opensource-techcommunity-activity-7215039647247159296-g6qD?utm_source=share&utm_medium=member_desktop"
+    href: "https://www.linkedin.com/posts/fuzziecoder_hackerrank-skill-certificate-activity-7335392707638435840-jZ9i?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
+  },
+  {
+    src: "/networking-15.png",
+    href: "https://www.linkedin.com/posts/fuzziecoder_aws-cloudcomputing-generativeai-activity-7362142274509529088-gqpX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZfjzABGfy1_4MeXrjTFwGDTXyGp3qqfvk"
   }
 ];

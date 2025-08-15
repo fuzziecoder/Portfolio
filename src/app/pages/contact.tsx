@@ -6,13 +6,11 @@ import { FlipWords } from "../../components/ui/flip-words";
 
 const ContactForm = () => {
   const words = ["Networking", "Collaboration", "Suggestions"];
-  };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mt-44 ">
+    <div className="max-w-7xl mx-auto px-4 mt-44">
       <div className="px-4">
         <h2 className="md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 xl:pl-0 lg:mb-0 sm:mb-0 relative z-10 w-[100%]">
-          {/* <div className="flex flex-row header-container"> */}
           <div className="flex flex-col items-start w-full sm:flex-row sm:header-container">
             <div className="title-box">
               <p
@@ -38,37 +36,33 @@ const ContactForm = () => {
         </p>
         <p className="pb-6">
           For any specific questions or comments, please don&apos;t hesitate to
-          contact me directly at
+          contact me directly at{" "}
           <a
-            className=" bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text ml-2"
+            className="bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text hover:from-purple-500 hover:to-gray-300 transition-all duration-300"
             href="mailto:ramvj2005@gmail.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             ramvj2005@gmail.com
           </a>
           . I strive to respond to all messages within{" "}
           <span className="text-white">24 hours</span>, although it may take a
-          bit longer during busy periods.{" "}
+          bit longer during busy periods.
         </p>
-        If you prefer social media, you can also find me on{" "}
-        <span className="text-white">Instagram</span> at
-        <a
-          className="bg-gradient-to-r from-pink-500 to-gray-400 text-transparent bg-clip-text ml-2"
-          href="https://instagram.com/fuzziecoder"
-          target="_blank"
-        >
-          @fuzziecoder
-        </a>
-        .
+        <p>
+          If you prefer social media, you can also find me on{" "}
+          <span className="text-white">Instagram</span> at{" "}
+          <a
+            className="bg-gradient-to-r from-pink-500 to-gray-400 text-transparent bg-clip-text hover:from-pink-400 hover:to-gray-300 transition-all duration-300"
+            href="https://instagram.com/fuzziecoder"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @fuzziecoder
+          </a>
+          .
+        </p>
       </h3>
-      <Link
-        href={"https://github.com/fuzziecoder"}
-        className="inline-flex items-center ml-4 w-[100px] h-[40px]"
-      >
-      </Link>
-      <div className="text-sm pt-60 sm:mt-20 font-light text-center relative z-20 text-gray-400 max-w-7xl pb-8">
-        Always be caffeinated! | © Ramkumar (fuzziecoder)
-      </div>
     </div>
   );
 };

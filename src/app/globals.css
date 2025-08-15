@@ -3,33 +3,120 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --primary-color: 99, 102, 241;
+  --secondary-color: 139, 92, 246;
+  --accent-color: 236, 72, 153;
+  --text-primary: 255, 255, 255;
+  --text-secondary: 156, 163, 175;
+  --timeline-line: 55, 65, 81;
+  --timeline-dot: 31, 41, 55;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: rgb(var(--background-rgb));
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  /* Timeline Styles */
+  .timeline-container {
+    @apply relative max-w-3xl mx-auto p-8;
+  }
+  
+  .timeline-line {
+    @apply absolute left-4 top-0 h-full w-0.5;
+    background-color: rgb(var(--timeline-line));
+  }
+  
+  .timeline-dot {
+    @apply absolute left-0 top-0 flex h-8 w-8 items-center justify-center rounded-full;
+    background-color: rgb(var(--timeline-dot));
+  }
+  
+  .timeline-content {
+    @apply pl-12 pb-8 last:pb-0;
+  }
+  
+  .timeline-title {
+    @apply text-lg font-semibold;
+    color: rgb(var(--text-primary));
+  }
+  
+  .timeline-date {
+    @apply text-sm;
+    color: rgb(var(--text-secondary));
+  }
+  
+  .timeline-description {
+    @apply text-base;
+    color: rgb(var(--text-secondary));
+  }
+
+  /* Card Styles */
+  .card-container {
+    @apply relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-white/[0.2] w-auto rounded-xl p-6 border;
+  }
+
+  /* Button Styles */
+  .gradient-button {
+    @apply relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50;
+  }
+
+  .gradient-button-content {
+    @apply inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl;
+  }
+
+  /* Section Styles */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  .section-title {
+    @apply md:text-4xl text-2xl lg:text-4xl font-bold text-left pb-12 text-white;
+  }
+
+  .section-content {
+    @apply md:text-xl text-sm lg:text-xl font-medium text-left text-gray-400 max-w-7xl pb-8 lg:mb-4 pl-4;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-600 to-gray-400 text-transparent bg-clip-text;
+  }
+
+  .hover-gradient {
+    @apply hover:from-purple-500 hover:to-gray-300 transition-all duration-300;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 @keyframes spin-slow {
@@ -40,6 +127,71 @@ body {
     transform: rotate(360deg);
   }
 }
+
 .animate-spin-slow {
   animation: spin-slow 10s linear infinite;
+}
+
+/* Particle Effects */
+.particles-container {
+  @apply absolute inset-0 w-full h-full;
+}
+
+.particles-gradient {
+  @apply absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)];
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-container {
+    @apply px-2;
+  }
+
+  .section-title {
+    @apply text-2xl pb-8;
+  }
+
+  .section-content {
+    @apply text-sm pb-4;
+  }
+}
+
+/* Dark Mode Overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}
+
+/* Custom Scrollbar Styling - Fuzziecoder Theme */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #374151; /* Dark grey scrollbar track */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9CA3AF; /* Light grey scroller */
+  border-radius: 6px;
+  border: 2px solid #374151; /* Dark grey border to match track */
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB; /* Lighter grey on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: #374151; /* Dark grey corner */
+}
+
+/* Firefox Scrollbar Styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9CA3AF #374151; /* Light grey scroller, dark grey track */
 }

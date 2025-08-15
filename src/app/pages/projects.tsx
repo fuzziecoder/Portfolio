@@ -6,7 +6,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa6";
 import { PiGitForkBold } from "react-icons/pi";
 import { ButtonsCard } from "@/components/ui/tailwindcss-buttons";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card.tsx";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
 const GITHUB_USERNAME = "lassiecoder";
 
@@ -111,14 +111,12 @@ const ThreeDCard = () => {
                   )}
 
                   <Link href={item.link} target="_blank">
-                    <ButtonsCard>
                       <button className="relative inline-flex h-10 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                         <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
                           View Project →
                         </span>
                       </button>
-                    </ButtonsCard>
                   </Link>
                 </div>
               </CardBody>
@@ -134,75 +132,30 @@ export default ThreeDCard;
 
 const dummyData = [
   {
-    title: "Community Health Files",
+    title: "Revon AI-powered",
     description:
-      "The community-health-files package automates the setup and management  for open-source projects, providing a streamlined way to maintain project guidelines and policies.",
+      "Revon is an AI-powered disease prediction web application designed to help users identify potential diseases based on the symptoms they enter. The app uses machine learning models to analyze user input, predict possible health conditions, and offer personalized suggestions such as diet tips, precautions, and nearby hospitals",
     image: "/project-1.png",
-    link: "https://github.com/lassiecoder/community-health-files",
-    repo: "community-health-files",
+    link: "https://github.com/fuzziecoder/revon",
+    repo: "Revon",
     projectType: ""
   },
   {
-    title: "GitHub README",
+    title: "Smart-Home",
     description:
-      "A dynamic GitHub profile showcasing JavaScript expertise, tech writing, speaking, and community contributions with engaging visuals, stats, and social links.",
+      "Smart Home Dashboard is a modern, interactive web application designed to simulate and manage smart home functionalities with a futuristic user interface. It allows users to control and monitor various smart home devices such as lights, temperature, humidity sensors, and energy usage from a single dashboard.",
     image: "/project-2.png",
-    link: "https://github.com/lassiecoder/lassiecoder",
-    repo: "lassiecoder",
+    link: "https://github.com/fuzziecoder/Smart-Home",
+    repo: "Smart-Home",
     projectType: ""
   },
   {
-    title: "Shoplane – E-commerce website",
+    title: "Brocode-Event App",
     description:
-      "Shoplane's GitHub repository, with 340 stars and 250 forks, is a significant player in open-source e-commerce, influencing the online retail sector's development.",
+      "BroCode is a real-time, mobile-first web application designed to make planning and managing group meetups with friends seamless, interactive, and fun.",
     image: "/project-3.png",
-    link: "https://github.com/lassiecoder/E-CommerceWebsite",
-    repo: "E-CommerceWebsite",
+    link: "https://github.com/fuzziecoder/Brocode",
+    repo: "brocode-meetup",
     projectType: ""
   },
-  {
-    title: "npx lassiecoder – in your terminal?",
-    description:
-      "A personalized command-line business card. This innovative tool allows you to showcase your professional profile, skills, and contact information in the terminal.",
-    image: "/project-4.gif",
-    link: "https://github.com/lassiecoder/npx-lassiecoder",
-    repo: "npx-lassiecoder",
-    projectType: ""
-  },
-  {
-    title: "EduFund - Mutual Funds & SIP",
-    description:
-      "EduFund, India's leading investment app, helps parents save for their children's education, ensuring a brighter future amid rising education expenses.",
-    image: "/project-5.png",
-    link: "https://play.google.com/store/apps/details?id=com.educationfund.edufund",
-    repo: "",
-    projectType: "work-project"
-  },
-  {
-    title: "Torum: Cryptocurrency Social App",
-    description:
-      "Torum's mobile app fosters a vibrant SocialFi ecosystem, connecting over 230,000 cryptocurrency enthusiasts since its 2018 inception.",
-    image: "/project-6.png",
-    link: "https://play.google.com/store/apps/details?id=com.torum.app&amp;hl=en_IN&amp;gl=US",
-    repo: "",
-    projectType: "work-project"
-  },
-  {
-    title: "Mutual funding app",
-    description:
-      "The proof-of-concept app exhibits mutual funds with authentication, presenting a scrollable list of key fund information. Selecting a fund directs users to a detailed product page for additional insights.",
-    image: "/project-7.png",
-    link: "https://github.com/lassiecoder/mutual-funding-app",
-    repo: "mutual-funding-app",
-    projectType: ""
-  },
-  {
-    title: "Adecco",
-    description:
-      "The Adecco mobile app transforms job placement with accuracy, speed, and thorough evaluation. Daily linking over 700,000 individuals to top-tier global opportunities.",
-    image: "/project-8.png",
-    link: "https://play.google.com/store/apps/details?id=com.adecco.app20&amp;hl=en_IN&amp;gl=US",
-    repo: "",
-    projectType: "work-project"
-  }
 ];
