@@ -35,6 +35,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" />
         <link rel="shortcut icon" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="c56bd831-c7c4-4e47-ad03-0dbad2be1900"
+        />
       </head>
       <body className={montserrat.className}>
         <SplashCursor />
