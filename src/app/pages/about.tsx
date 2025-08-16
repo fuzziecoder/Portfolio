@@ -15,7 +15,7 @@ const About = () => {
       </div>
       <h3 className="md:text-xl text-sm lg:text-xl font-medium text-left relative z-20 text-gray-400 max-w-7xl pb-8 lg:mb-4 pl-4 pr-4">
         <div>
-          Hello, I'm Ramkumar, also known as{" "}
+          Hello, I&apos;m Ramkumar, also known as{" "}
           <a 
             href="https://www.google.com/search?q=fuzziecoder" 
             target="_blank" 
