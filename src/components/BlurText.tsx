@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import type { Transition } from 'framer-motion';
 import { useEffect, useRef, useState, useMemo } from 'react';
 
 type AnimationStep = {
@@ -108,12 +109,12 @@ const BlurText = ({
       {elements.map((segment, index) => {
         const animateKeyframes = buildKeyframes(fromSnapshot, toSnapshots);
 
-        const spanTransition = {
+        const spanTransition: Transition = {
           duration: totalDuration,
           times,
           delay: (index * delay) / 1000,
+          ease: easing,
         };
-        (spanTransition).ease = easing;
 
         return (
           <motion.span
