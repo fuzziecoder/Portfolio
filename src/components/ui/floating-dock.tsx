@@ -4,6 +4,7 @@
  * Mobile navbar is better positioned at bottom right.
  **/
 
+import React from "react";
 import { cn } from "../utils/cn";
 import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
@@ -102,16 +103,12 @@ const FloatingDockDesktop = ({
   let mouseX = useMotionValue(Infinity);
   return (
     <motion.div
-      // onMouseMove={(e) => mouseX.set(e.pageX)}
-      // onMouseLeave={() => mouseX.set(Infinity)}
-      {...{
-        onMouseMove: (e: MouseEvent) => mouseX.set(e.pageX),
-        onMouseLeave: (e: MouseEvent) => mouseX.set(Infinity),
-        className: cn(
-          "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
-          className
-        )
-      }}
+      onMouseMove={(e: React.MouseEvent<HTMLDivElement>) => mouseX.set(e.pageX)}
+      onMouseLeave={() => mouseX.set(Infinity)}
+      className={cn(
+        "mx-auto hidden md:flex h-16 gap-4 items-end rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        className
+      )}
     >
       {items.map((item) => (
         <IconContainer mouseX={mouseX} key={item.title} {...item} />
@@ -186,7 +183,7 @@ function IconContainer({
         }}
       >
         <AnimatePresence>
-          {/* {hovered && (
+          {hovered && (
             <motion.div
               initial={{ opacity: 0, y: 0, x: "-50%" }}
               animate={{ opacity: 1, y: 100, x: "-50%" }}
@@ -195,7 +192,7 @@ function IconContainer({
             >
               {title}
             </motion.div>
-          )} */}
+          )}
         </AnimatePresence>
         <motion.div
           style={{ width: widthIcon, height: heightIcon }}
