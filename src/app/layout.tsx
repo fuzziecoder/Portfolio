@@ -4,6 +4,7 @@ import "./globals.css";
 import {} from "next/font/google";
 import SplashCursor from "@/components/ui/splash-cursor";
 import { Analytics } from "@vercel/analytics/next";
+import MobileWarning from "@/components/MobileWarning";
 
 export const metadata: Metadata = {
   title:
@@ -44,6 +45,7 @@ export default function RootLayout({
       </head>
       <body className={montserrat.className}>
         <SplashCursor />
+        <MobileWarning />
         {children}
         <Analytics />
       </body>
