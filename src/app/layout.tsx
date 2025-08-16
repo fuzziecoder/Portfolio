@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import {} from "next/font/google";
 import SplashCursor from "@/components/ui/splash-cursor";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title:
@@ -44,6 +45,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <SplashCursor />
         {children}
+        <Analytics />
       </body>
     </html>
   );
